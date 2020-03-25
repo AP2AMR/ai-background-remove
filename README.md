@@ -64,6 +64,8 @@ ipython kernel install --user --name=detectron2
 python detectron2/demo.py --config-file detectron2/lib/python3.7/site-packages/detectron2/model_zoo/configs/COCO-PanopticSegmentation/panoptic_fpn_R_101_3x.yaml --input input/* --output output  --opts MODEL.DEVICE cpu MODEL.WEIGHTS detectron2://COCO-PanopticSegmentation/panoptic_fpn_R_101_3x/139514519/model_final_cafdb1.pkl
 ```
 
+3. Detected objects are marked and a visualization is saved in your /output folder. 
+
 
 ## Object Extraction
 
@@ -73,8 +75,9 @@ Run Jupyter notebook
 jupyter notebook
 ```
 
-Open bg-remove.ipynb and make sure the 'detectron2' kernel is used and **follow the instructions in the notebook**
+For **background removal** open **bg-remove.ipynb** and make sure the **'detectron2' kernel** is used and run the cells
 
+If you want to instead **analyse** your input corpus open **deep_watching.ipynb** and run the cells (make sure the **'detectron2' kernel** is used)
 
-### If you want to know how to label and train your own networks have a look at https://github.com/ghowa/dhd2020
+### If you want to know how to label pictures and train your own networks have a look at https://github.com/ghowa/dhd2020
 
