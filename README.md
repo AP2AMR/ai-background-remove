@@ -2,6 +2,7 @@
 <p align="center">
   <img src="dog_animation.gif"/>
 </p>
+
 ## Installation
 
 -1. Installing Detectron2 on **Linux** systems is pretty straightforward. 
