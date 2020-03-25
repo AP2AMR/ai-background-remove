@@ -1,4 +1,8 @@
 # Remove backgrounds and extract objects from pictures with Detectron2 (no GPU required)
+
+![](dog_animation.gif)
+
+
 ## Installation
 
 -1. Installing Detectron2 on **Linux** systems is pretty straightforward. 
@@ -63,15 +67,13 @@ python detectron2/demo.py --config-file detectron2/lib/python3.7/site-packages/d
 
 ## Object Extraction
 
-1. If you have not yet installed Jupyter Notebook, install it https://jupyter.org/install
-
-2. Run Jupyter notebook
+Run Jupyter notebook
 
 ```
 jupyter notebook
 ```
 
-Open bg-remove.ipynb and make sure the 'detectron2' kernel is used and follow the instructions in the notebook
+Open bg-remove.ipynb and make sure the 'detectron2' kernel is used and **follow the instructions in the notebook**
 
 
 ### If you want to know how to label and train your own networks have a look at https://github.com/ghowa/dhd2020
