@@ -1,7 +1,16 @@
-# Remove backgrounds and extract objects from pictures with Detectron2 (no GPU required)
+# Remove backgrounds and cut out objects from pictures with AI
+
+This works by first detecting objects with [Detectron2](https://github.com/facebookresearch/detectron2) , then cutting out the desired masks with [openCV](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_setup/py_intro/py_intro.html#intro) and cropping out the object to its bounding boxes.
+
+[Detectron2](https://github.com/facebookresearch/detectron2) is Facebook AI Research's next generation software system that implements state-of-the-art object detection algorithms. **There is no GPU required if you use pretrained models**
+ 
+[List of currently supported objects](https://github.com/DDemmer1/ai-background-remove/blob/master/supported_objects.txt)
+
 <p align="center">
   <img src="dog_animation.gif"/>
 </p>
+
+The extracted objects are not cut out pixel-perfect, but it can be a tremendous workload reduction to be able to process thousands of images at once. For example as a data set for other ML applications. 
 
 ## Installation
 
